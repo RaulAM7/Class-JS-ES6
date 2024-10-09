@@ -112,3 +112,12 @@ function printConsola(arg1, ...arg2) {
 }
 
 printConsola('primer argumento', 0, 1, 2, 3, 4, 5, 6)
+
+
+// TERNARY OPERATOR
+
+let age = 20
+
+let canvote = (age >= 18) ? 'Si puede votar' : 'No puede votar'
+
+console.log(canvote)
