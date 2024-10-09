@@ -82,3 +82,14 @@ preferencias.music  = 'bachata'
 console.log(preferencias)
 
 console.log(student)
+
+
+// Deconstructing Arrays
+
+let numbers = ["one", "two", "three", "fourth", "fifth"];
+
+let numeros = [, segundo] = numbers
+
+console.log(numeros[0])
+console.log(numeros[1])
+console.log(numeros[2])
