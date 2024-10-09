@@ -93,3 +93,22 @@ let numeros = [, segundo] = numbers
 console.log(numeros[0])
 console.log(numeros[1])
 console.log(numeros[2])
+
+// SPREAD OPERATOR para operaciones con arrays
+
+let reptiles = ['snake', 'lizard', 'alligator'];
+let mammals = ['puppy', 'kitten', 'bunny'];
+
+let combiningArr = [...reptiles, ...mammals]
+
+console.log(combiningArr)
+
+
+// SPREAD OPERATOR como REST PARAMETER
+
+function printConsola(arg1, ...arg2) {
+    console.log(arg1)
+    console.log(arg2)
+}
+
+printConsola('primer argumento', 0, 1, 2, 3, 4, 5, 6)
