@@ -31,3 +31,54 @@ nums.printNumsCallback()
 
 
 // METODOS DE STRINGS
+
+let palabra = 'Esto es un string de prueba'
+
+
+console.log(palabra.startsWith('E'))
+console.log(palabra.startsWith('Esto'))
+console.log(palabra.startsWith('o', 3))
+
+
+console.log(palabra.includes('o'))
+
+
+// Deconstruccion de Objetos
+
+const student = {
+    name: 'Ana',
+    age: 22,
+    studies: 'Maths',
+    university: 'ULPGC',
+    preferences: {
+        music: 'rock',
+        sports: 'football',
+        videogames: 'wowClassic'
+    } 
+}
+
+// Normalmente hariamos
+
+/* const nombre = student.name
+const edad = student.age
+const estudios = student.studies */
+
+
+// Pero con Deconstructing
+
+const {name:nombre, age:edad, studies:estudios} = student
+
+
+console.log(nombre)
+console.log(edad)
+console.log(estudios)
+
+const {preferences: preferencias} = student
+
+console.log(preferencias)
+
+preferencias.music  = 'bachata'
+
+console.log(preferencias)
+
+console.log(student)
